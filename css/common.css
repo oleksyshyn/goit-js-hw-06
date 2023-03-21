@@ -9,8 +9,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
-  color: #212121;
   line-height: 1.5;
+  min-width: 320px;
 }
 
 input {
@@ -21,4 +21,43 @@ input {
 button {
   padding: 8px 12px;
   cursor: pointer;
+}
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 10px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 320px;
+  gap: 10px;
+}
+
+.gallery-image {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 0;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    max-width: 630px;
+  }
+
+  .gallery-item {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .gallery {
+    max-width: 940px;
+  }
+
+  .gallery-item {
+    flex-basis: calc((100% - 20px) / 3);
+  }
 }
