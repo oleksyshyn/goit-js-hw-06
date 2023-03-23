@@ -11,7 +11,7 @@ function onFormSubmit(event) {
     const password = formElements.password.value;
    
     if (email === '' || password === '') {
-        const message = "All fields must be filled!";
+        const message = 'All fields must be filled!';
         alert(message);
     } else {
         const formData = {

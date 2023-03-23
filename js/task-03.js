@@ -25,5 +25,5 @@ images.forEach(image => {
   `;
 });
 
-galleryListEl.insertAdjacentHTML("beforeend", markup);
+galleryListEl.insertAdjacentHTML('beforeend', markup);
 
